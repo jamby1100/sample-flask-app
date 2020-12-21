@@ -5,4 +5,4 @@ import json
 
 @api.route('/')
 def home():
-    return json.dumps({"status": "welcome"})
+    return json.dumps({"status": "intense welcome"})
