@@ -5,4 +5,4 @@ import json
 
 @api.route('/')
 def home():
-    return json.dumps({"status": "potluck dinner"})
+    return json.dumps({"status": "homeroast celebration"})
