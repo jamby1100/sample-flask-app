@@ -23,9 +23,9 @@ aws ecr get-login-password --profile globe917v --region ap-southeast-1 | docker 
 
 docker build -t flask-helloworld .
 
-docker tag flask-helloworld:latest 043449995291.dkr.ecr.ap-southeast-1.amazonaws.com/flask-helloworld:v0.0.1
+docker tag flask-helloworld:latest 043449995291.dkr.ecr.ap-southeast-1.amazonaws.com/flask-helloworld:v0.0.2
 
-docker push 043449995291.dkr.ecr.ap-southeast-1.amazonaws.com/flask-helloworld:v0.0.1
+docker push 043449995291.dkr.ecr.ap-southeast-1.amazonaws.com/flask-helloworld:v0.0.2
 
 
 ```
