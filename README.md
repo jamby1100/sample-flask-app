@@ -19,13 +19,16 @@ flask run
 ```
 
 ```sh
-aws ecr get-login-password --profile globe917v --region ap-southeast-1 | docker login --username AWS --password-stdin 043449995291.dkr.ecr.ap-southeast-1.amazonaws.com
+aws ecr get-login-password --region ap-southeast-1 | docker login --username AWS --password-stdin 874957933250.dkr.ecr.ap-southeast-1.amazonaws.com
 
 docker build -t flask-helloworld .
 
-docker tag flask-helloworld:latest 043449995291.dkr.ecr.ap-southeast-1.amazonaws.com/flask-helloworld:v0.0.2
+docker tag flask-helloworld:latest 874957933250.dkr.ecr.ap-southeast-1.amazonaws.com/flask-helloworld:v0.0.2
 
-docker push 043449995291.dkr.ecr.ap-southeast-1.amazonaws.com/flask-helloworld:v0.0.2
-
-
+docker push 874957933250.dkr.ecr.ap-southeast-1.amazonaws.com/flask-helloworld:v0.0.2
 ```
+
+# Paths
+
+- `GET /` - homepage
+- `POST /loyalty_card` - create a loyalty card
