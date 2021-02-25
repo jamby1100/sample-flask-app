@@ -33,7 +33,7 @@ def authenticated():
 
 @api.route('/')
 def home():
-    return json.dumps({"status": "homeroast celebration"})
+    return json.dumps({"status": "this is the homepage"})
 
 
 cards = []
